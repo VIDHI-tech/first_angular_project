@@ -1,0 +1,10 @@
+<h1 class="head">Login Form</h1>
+<br class="loginform">
+<form my_form="ngForm">
+  <input type="text" placeholder="Name" name="name" [(ngModel)]=name/>
+  <select name="role" [(ngModel)]=role>
+    <option value="admin">admin</option>
+    <option value="user">user</option>
+  </select>
+  <button (click)="loginbtn()">Login</button>
+</form>
