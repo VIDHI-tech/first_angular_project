@@ -1,1 +1,32 @@
 <p>reacform works!</p>
+
+<form [formGroup]="formreact" (ngSubmit)="gfdg()">
+    <div formGroupName="name"> 
+      <label for="fname">First Name: </label>
+      <input id="fname" type="text" formControlName="firstName">
+      <br>
+      <label for="lname">Last Name: </label>
+      <input id="name" type="text" formControlName="lastName">
+    </div>
+    
+    <label for="email">Email: </label>
+    <input id="email" type="text" formControlName="email">
+
+    <label for="password">Password: </label>
+    <input id="password" type="text" formControlName="password">
+    
+    <div formGroupName="address">
+        
+       <label for="state">State: </label>
+       <input id="state" type="text" formControlName="state">
+   
+       
+       <label for="city">City: </label>
+       <input id="city" type="text" formControlName="city">
+
+    </div>
+
+    <button type="submit">Submit React Form</button>
+</form>
+
+{{formreact.value| json}}
